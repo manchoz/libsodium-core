@@ -326,10 +326,6 @@ namespace Sodium
           opsLimit = SCRYPT_OPSLIMIT_INTERACTIVE;
           memLimit = SCRYPT_MEMLIMIT_INTERACTIVE;
           break;
-        case Strength.Moderate:
-          opsLimit = SCRYPT_OPSLIMIT_MODERATE;
-          memLimit = SCRYPT_MEMLIMIT_MODERATE;
-          break;
         case Strength.Medium:
           opsLimit = SCRYPT_OPSLIMIT_MEDIUM;
           memLimit = SCRYPT_MEMLIMIT_MEDIUM;
@@ -420,10 +416,6 @@ namespace Sodium
         case Strength.Interactive:
           opsLimit = SCRYPT_OPSLIMIT_INTERACTIVE;
           memLimit = SCRYPT_MEMLIMIT_INTERACTIVE;
-          break;
-        case Strength.Moderate:
-          opsLimit = SCRYPT_OPSLIMIT_MODERATE;
-          memLimit = SCRYPT_MEMLIMIT_MODERATE;
           break;
         case Strength.Medium:
           opsLimit = SCRYPT_OPSLIMIT_MEDIUM;

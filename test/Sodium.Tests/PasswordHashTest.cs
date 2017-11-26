@@ -293,7 +293,7 @@ namespace Tests
     [Test]
     public void TestGenerateSalt()
     {
-      Assert.AreEqual(32, PasswordHash.GenerateSalt().Length);
+      Assert.AreEqual(32, PasswordHash.ScryptGenerateSalt().Length);
     }
 
     [Test]
@@ -323,7 +323,7 @@ namespace Tests
     public void ScryptHashStringModerateTest()
     {
       const string PASSWORD = "gkahjfkjewrykjKJHKJHKJbhuiqyr  8923fhsjfkajwehkjg";
-      var hash = PasswordHash.ScryptHashString(PASSWORD, PasswordHash.Strength.Moderate);
+      var hash = PasswordHash.ScryptHashString(PASSWORD, PasswordHash.Strength.Medium);
 
       Assert.IsTrue(PasswordHash.ScryptHashStringVerify(hash, PASSWORD));
     }
